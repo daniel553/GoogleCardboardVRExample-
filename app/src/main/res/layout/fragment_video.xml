@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tripletres.android.gcvvr.googlecardboardvrexample.VideoFragment">
+
+    <com.google.vr.sdk.widgets.video.VrVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"
+        android:text="Loading Video..."
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <!-- Seeking UI & progress indicator.-->
+    <SeekBar
+        android:id="@+id/seek_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/status_text" />
+
+</RelativeLayout>

@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Replace fragment
-        val fragment = PanoramaFragment.newInstance()
+        val fragment = VideoFragment()
         supportFragmentManager.beginTransaction()
                 .replace(R.id.main_content, fragment)
                 .commit()
